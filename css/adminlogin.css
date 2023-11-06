@@ -1,0 +1,139 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #93caf4;
+    width: 95%;
+    margin: auto;
+    margin-top: 15vh;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-artical {
+    width: 35%;
+    display: flex;
+    margin-left: 3%;
+}
+
+
+.you-know {
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #0e3a5b;
+    padding-top: 18px;
+    opacity: 90%;
+
+}
+
+.offer {
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #0e3a5b;
+    padding-top: 8px;
+    opacity: 90%;
+}
+
+.sevntyfive {
+    font-size: 2.7em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(116, 33, 33);
+}
+
+.right-artical-image {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    align-items: end;
+}
+
+.bggirl {
+    width: 38vw;
+    padding-left: 10%;
+    height: auto;
+}
+
+.login-form {
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    min-width: 330px;
+    width: 30%;
+}
+
+.apply-now {
+    width: 120px;
+    height: 45px;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #0e3a5b;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.apply-now:hover {
+    background-color: #81bcea;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+input {
+    width: 85%;
+    height: 8vh;
+    border: 0px solid white;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    background: transparent;
+    color: rgba(0, 0, 0);
+
+}
+
+select {
+    width: 35%;
+    height: 6vh;
+    border: 0px solid white;
+    background: transparent;
+    border: none;
+}
+
+.submit {
+    width: 60%;
+    height: 7vh;
+    border: 1px solid #0e3a5b;
+    border-radius: 25px;
+    background-color: #0e3a5b;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 65px;
+    cursor: pointer;
+
+}
+
+.submit:hover {
+    background-color: #93caf4;
+}
+
+.forget-pass {
+    padding-left: 70px;
+}

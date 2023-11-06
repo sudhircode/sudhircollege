@@ -1,0 +1,189 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #93caf4;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 18vh;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-artical {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    margin-left: 2%;
+}
+.text-left-artical{
+    margin: auto;
+    width: 95%;
+}
+.you-know {
+    width: 100%;
+    margin: auto;
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #0e3a5b;
+    padding-top: 18px;
+}
+
+.offer {
+    width: 100%;
+    margin: auto;
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #0e3a5b;
+    padding-top: 8px;
+
+}
+
+.sevntyfive {
+    font-size: 2.7em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(116, 33, 33);
+}
+
+.apply{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+.apply-now,.left button,.right button {
+    margin: auto;
+    width: 120px;
+    height: 45px;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #0e3a5b;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.apply-now:hover {
+    background-color: #81bcea;
+}
+.left button:hover {
+    background-color: #81bcea;
+}
+.right button:hover {
+    background-color: #81bcea;
+}
+.right-login-rigister{
+    width: 44%;
+    min-width: 350px;
+    margin: auto;
+    margin-bottom: 2%;
+}
+.left {
+    width: 35%;
+    height: auto;
+    min-width: 350px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 2%;
+    /* display: block; */
+    display: none;
+}
+
+.left h2,.std-logn {
+    font-size: 1.9em;
+    font-family: sans-serif;
+}
+
+.new-here {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.left input {
+    margin: auto;
+    width: 60%;
+    border: none;
+    border: 0px solid white;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    margin-top: 4%;
+}
+
+.checkbox {
+    position: relative;
+    bottom: 35px;
+    left: 90px;
+}
+
+.left a,.alredy-re,.gender {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.left button,
+.right button {
+    width: 60%;
+    margin: auto;
+    height: 6.5vh;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+.right {
+    width: 35%;
+    height: auto;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5%;
+    /* display: none; */
+}
+
+.right input {
+    margin: auto;
+    width: 80%;
+    border: none;
+    border: 0px solid white;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    margin-top: 8%;
+}
+.submit-row{
+    padding-top: 3%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.program22{
+    display: none;
+}
+.program11{
+display: block;
+}

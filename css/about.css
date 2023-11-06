@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-college-img-div{
+    width: 95%;
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+    height: auto;
+}
+.about-main-college-img{
+    width: 55%;
+}
+.about-img-div-text{
+    width: 45%;
+    margin: auto;
+    margin-right: 8%;
+    background-color: #cae2f4;
+    padding: 4%;
+    border-radius: 30px;
+}
+.main-college-img-div img{
+    width: 95vw;
+    height: 75vh;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: auto;
+}
+.about-img-div-text{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}

@@ -1,0 +1,272 @@
+@media (min-width: 620px) and (max-width: 950px) {
+
+    /* .main {
+        background-color: violet;
+    } */
+
+    .nav-table-elements {
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    .nav-collage-name {
+        margin-left: -5%;
+    }
+
+    .apply-button {
+        width: 15vw;
+    }
+
+    .menu-icon span {
+        display: block;
+    }
+
+    .menu-icon {
+        padding-top: 10px;
+        cursor: pointer;
+    }
+
+    .banner-right {
+        width: 30%;
+        margin-left: 1%;
+    }
+
+    .banner-text {
+        width: 180%;
+    }
+
+    .banner-apply-button {
+        padding: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .banner-down-text {
+        width: 180%;
+    }
+
+    .banner-girl {
+        width: 70%;
+        margin-left: 20%;
+        transition: all 3000ms;
+    }
+
+    .faculty {
+        min-width: 40vw;
+    }
+
+    .our-mission-left,
+    .our-vision-right {
+        width: 45%;
+    }
+
+    .our-mission-right,
+    .our-vision-left {
+        width: 50%;
+    }
+
+    .main-images,
+    .main-images1 {
+        max-width: 380px;
+    }
+
+    .right {
+        min-width: 355px;
+    }
+
+    .left-artical {
+        width: 45%;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+    .rightquries {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .rightquries img {
+        width: 90vw;
+    }
+
+    .leftquries {
+        width: 98%;
+    }
+    .footer-left,.footer-right,.footer-center{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+}
+
+@media (min-width: 620px) and (max-width: 700px) {
+    /* .main {
+        background-color: black;
+    } */
+
+    .our-mission-left,
+    .our-mission-right,
+    .our-vision-right,
+    .our-vision-left {
+        width: 100%;
+    }
+
+    .main-images,
+    .main-images1 {
+        max-width: 600px;
+    }
+
+    .our-vision {
+        flex-direction: column-reverse;
+    }
+
+    .left-artical {
+        width: 80vw;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 620px) {
+
+    /* .main {
+        background-color: rgb(206, 136, 22);
+    } */
+
+    .nav-table-elements {
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+        width: 99%;
+        position: fixed;
+        left: .5%;
+    }
+
+    .nav-collage-name {
+        font-size: 1em;
+    }
+
+    .menu-icon span {
+        display: nones;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 4px;
+        background-color: #000;
+    }
+
+    .nav-table-elements2 {
+        width: 30vw;
+        position: absolute;
+        left: -140%;
+    }
+
+    .apply-button {
+        font-size: .8em;
+    }
+
+    .nav-image {
+        max-width: 45px;
+        height: auto;
+
+    }
+
+    .apply-button {
+        width: 20vw;
+    }
+
+    .menu-icon span {
+        display: block;
+    }
+
+    .menu-icon {
+        padding-top: 10px;
+        cursor: pointer;
+    }
+
+    .banner-right {
+        margin: auto;
+        width: 90%;
+    }
+
+    .banner-girl {
+        margin-left: 18%;
+        transition: all 2000ms;
+    }
+
+    .why-left-side {
+        width: 100%;
+
+    }
+
+    .why-right-text {
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .faculty {
+        min-width: 40vw;
+    }
+
+    .text-left-artical {
+        font-size: .8em;
+    }
+
+    .bggirl {
+        margin-left: 12vw;
+    }
+
+    .our-vision {
+        flex-direction: column-reverse;
+    }
+
+    .our-mission-left,
+    .our-mission-right,
+    .our-vision-right,
+    .our-vision-left {
+        width: 100%;
+    }
+
+    .left-artical {
+        width: 80vw;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+    .right {
+        min-width: 350px;
+    }
+
+    .down-div div,
+    .div-reviews div {
+        width: 90vw;
+        margin-top: 3%;
+    }
+
+    .rightquries {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .rightquries img {
+        width: 88vw;
+    }
+
+    .leftquries {
+        width: 98%;
+    }
+    .footer-left,.footer-right,.footer-center{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        padding-left: 0px;
+    }
+}
