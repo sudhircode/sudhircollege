@@ -13,30 +13,48 @@ function login() {
     document.querySelector('#login-form').classList.add('program11');
     document.querySelector('#register-form').classList.remove('program11');
 }
-
-{
-    const toggleButton = document.querySelector('#toggle-button');
-const hideText = document.querySelector('#hide-text');
-
-toggleButton.addEventListener('click', function() {
-    if (hideText.style.display === 'none') {
-        hideText.style.display = 'block';
-    } else {
-        hideText.style.display = 'none';
+document.getElementById('toggle-button').addEventListener("click", function () {
+    let a = document.getElementById('toggle-button').innerText;
+    document.getElementById('hide-text').classList.toggle('show');
+    if (a == "See More . . .") {
+        document.getElementById('toggle-button').innerText = "Show Less . . .";
     }
-});
+    else {
 
-}
-{
-    const toggleButton = document.querySelector('#toggle-button1');
-const hideText = document.querySelector('#hide-text1');
-
-toggleButton.addEventListener('click', function() {
-    if (hideText.style.display === 'none') {
-        hideText.style.display = 'block';
-    } else {
-        hideText.style.display = 'none';
+        document.getElementById('toggle-button').innerText = "See More . . .";
     }
-});
+})
+document.getElementById('toggle-button1').addEventListener("click", function () {
+    let a = document.getElementById('toggle-button1').innerText;
+    document.getElementById('hide-text1').classList.toggle('show');
+    if (a == "See More . . .") {
+        document.getElementById('toggle-button1').innerText = "Show Less . . .";
+    }
+    else {
 
+        document.getElementById('toggle-button1').innerText = "See More . . .";
+    }
+})
+
+function checkScreenOrientation() {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        document.querySelector('.web-link').innerHTML = " Sudhir College "
+    } else if (window.matchMedia("(orientation: landscape)").matches) {
+        document.querySelector('.web-link').innerHTML = "Sudhir College Of Education "
+    }
 }
+function Arrow() {
+    if (window.scrollY >= 200) {
+        document.getElementById('arrow').style.display = "block";
+    }
+    else {
+        document.getElementById('arrow').style.display = "none";
+    }
+}
+document.getElementById('arrow').addEventListener("click",function()
+{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+})

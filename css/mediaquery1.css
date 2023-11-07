@@ -1,27 +1,15 @@
-@media (min-width: 620px) and (max-width: 950px) {
-
-    /* .main {
-        background-color: violet;
-    } */
-
-    .nav-table-elements {
-        display: none;
-    }
-
-    header {
-        justify-content: space-around;
-    }
-
-    .nav-collage-name {
-        margin-left: -5%;
-    }
-
-    .apply-button {
-        width: 15vw;
-    }
+@media (min-width: 700px) and (max-width: 950px) {
 
     .menu-icon span {
         display: block;
+    }
+
+    .others-nav-elements {
+        display: none;
+    }
+
+    .nav-logo {
+        width: 50vw;
     }
 
     .menu-icon {
@@ -29,143 +17,60 @@
         cursor: pointer;
     }
 
-    .banner-right {
-        width: 30%;
-        margin-left: 1%;
-    }
-
-    .banner-text {
-        width: 180%;
-    }
-
-    .banner-apply-button {
-        padding: 3%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .banner-down-text {
-        width: 180%;
-    }
-
-    .banner-girl {
-        width: 70%;
-        margin-left: 20%;
-        transition: all 3000ms;
+    .why-left-side {
+        justify-content: space-around;
     }
 
     .faculty {
         min-width: 40vw;
     }
 
-    .our-mission-left,
-    .our-vision-right {
-        width: 45%;
-    }
-
-    .our-mission-right,
-    .our-vision-left {
-        width: 50%;
-    }
-
-    .main-images,
-    .main-images1 {
-        max-width: 380px;
-    }
-
-    .right {
-        min-width: 355px;
-    }
-
-    .left-artical {
-        width: 45%;
-        text-align: center;
-        padding-bottom: 3%;
-    }
-
-    .rightquries {
-        margin-top: 3%;
-        width: 100%;
-    }
-
-    .rightquries img {
-        width: 90vw;
-    }
-
     .leftquries {
-        width: 98%;
-    }
-    .footer-left,.footer-right,.footer-center{
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        padding-left: 0px;
+        padding: 20px;
     }
 
-}
-
-@media (min-width: 620px) and (max-width: 700px) {
-    /* .main {
-        background-color: black;
-    } */
-
-    .our-mission-left,
-    .our-mission-right,
-    .our-vision-right,
-    .our-vision-left {
-        width: 100%;
+    .leftquries-icon {
+        margin-top: 20px;
     }
 
-    .main-images,
-    .main-images1 {
-        max-width: 600px;
+    .button-quries {
+        margin-top: 25px;
     }
 
-    .our-vision {
-        flex-direction: column-reverse;
+    .button-quries button {
+        font-size: 1em;
     }
 
-    .left-artical {
-        width: 80vw;
-        text-align: center;
-        padding-bottom: 3%;
+    .leftquries div h2 {
+        padding: 0px;
+        line-height: 1.4em;
+        font-size: 1.8em;
+    }
+
+    .round-icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 1.7em;
+        transition: .3s ease-in-out;
     }
 }
 
-@media (min-width: 100px) and (max-width: 620px) {
+@media (min-width: 100px) and (max-width: 700px) {
 
-    /* .main {
-        background-color: rgb(206, 136, 22);
-    } */
+    .menu-icon span {
+        display: block;
+    }
 
-    .nav-table-elements {
+    .others-nav-elements {
         display: none;
     }
 
-    header {
-        justify-content: space-around;
-        width: 99%;
-        position: fixed;
-        left: .5%;
+    .nav-logo {
+        width: 50vw;
     }
 
     .nav-collage-name {
         font-size: 1em;
-    }
-
-    .menu-icon span {
-        display: nones;
-        width: 25px;
-        height: 3px;
-        margin-bottom: 4px;
-        background-color: #000;
-    }
-
-    .nav-table-elements2 {
-        width: 30vw;
-        position: absolute;
-        left: -140%;
     }
 
     .apply-button {
@@ -175,11 +80,10 @@
     .nav-image {
         max-width: 45px;
         height: auto;
-
     }
 
     .apply-button {
-        width: 20vw;
+        width: 25vw;
     }
 
     .menu-icon span {
@@ -191,19 +95,25 @@
         cursor: pointer;
     }
 
-    .banner-right {
-        margin: auto;
-        width: 90%;
+    .intro-banner {
+        flex-direction: column;
     }
 
-    .banner-girl {
-        margin-left: 18%;
-        transition: all 2000ms;
+    .banner-right {
+        width: 90vw;
+    }
+
+    .banner-main-text {
+        width: 80vw;
+    }
+
+    .banner-down-text {
+        width: 80vw;
+        padding-right: 20px;
     }
 
     .why-left-side {
         width: 100%;
-
     }
 
     .why-right-text {
@@ -211,62 +121,83 @@
         width: 100%;
     }
 
-    .faculty {
-        min-width: 40vw;
-    }
-
-    .text-left-artical {
-        font-size: .8em;
-    }
-
-    .bggirl {
-        margin-left: 12vw;
-    }
-
-    .our-vision {
+    .after-intro {
         flex-direction: column-reverse;
     }
 
-    .our-mission-left,
+    .why-left-side {
+        justify-content: space-evenly;
+    }
+
+    .faculty {
+        width: 45vw;
+        min-width: 160px;
+    }
+
+    .our-mission,
+    .our-vision {
+        flex-direction: column;
+    }
+
+    .our-mission {
+        flex-direction: column-reverse;
+    }
+
     .our-mission-right,
-    .our-vision-right,
     .our-vision-left {
-        width: 100%;
+        width: 95vw;
     }
 
-    .left-artical {
-        width: 80vw;
-        text-align: center;
-        padding-bottom: 3%;
+    .our-mission-left,
+    .our-vision-right {
+        width: 95vw;
     }
 
-    .right {
-        min-width: 350px;
+    .down-div div {
+        width: 90vw;
     }
 
-    .down-div div,
     .div-reviews div {
         width: 90vw;
-        margin-top: 3%;
+    }
+
+    .leftquries,
+    .rightquries {
+        width: 90vw;
+        margin-top: 30px;
     }
 
     .rightquries {
-        margin-top: 3%;
-        width: 100%;
+        row-gap: 30px;
     }
 
     .rightquries img {
-        width: 88vw;
+        width: 90vw;
     }
 
-    .leftquries {
-        width: 98%;
+    .footer-text {
+        flex-direction: column;
     }
-    .footer-left,.footer-right,.footer-center{
-        width: 100%;
-        text-align: center;
+
+    .footer-center {
+        width: 90vw;
         justify-content: center;
-        margin: auto;
         padding-left: 0px;
     }
+
+    .footer-center li {
+        font-size: 1em;
+    }
+
+    .footer-left {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 5px;
+        width: 50vw;
+        justify-content: space-evenly;
+    }
+
 }

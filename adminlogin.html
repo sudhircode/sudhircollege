@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Admin Login</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
-    <link rel="shortcut icon" href="images/black fevicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/mediaquery1.css">
-    <link rel="stylesheet" href="css/adminlogin.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="images/black fevicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/mediaquery1.css" />
+    <link rel="stylesheet" href="css/adminlogin.css" />
+  </head>
 
-<body>
-    <div class="main">
-        <header>
-            <div class="nav-logo"><img src="images/transparent-logo.png" alt="main collage logo " class="nav-image">
-            </div>
-            <div class="nav-collage-name"><a href="home.jsp" class="web-link">Sudhir College Of Education</a></div>
-            <div class="menu">
-                <div class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="nav-table-elements2">
-                    <div class="shared-class"><a href="#">Courses </a></div>
-                    <div class="shared-class"><a href="#">Faculty </a></div>
-                    <div class="shared-class"><a href="#">Contact </a></div>
-                    <div class="shared-class"><a href="studentlogin.html" target="_blank"> Student Login </a></div>
-                    <div class="shared-class"><a href="adminlogin.html" target="_blank"> Admin Login </a></div>
-                </div>
-            </div>
-            <div class="others-nav-elements">
-                <table class="nav-table-elements">
-                    <tr>
-                        <td> <a href="#">Courses </a></td>
-                        <td> <a href="#">Faculty </a></td>
-                        <td> <a href="#">Contact </a></td>
-                        <td> <a href="studentlogin.html" target="_blank"> Student Login </a></td>
-                        <td> <a href="adminlogin.html" target="_blank"> Admin Login </a></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="apply-nav"><button class="apply-button">Apply Now</button></div>
-        </header>
-        <br>
-        <div class="content">
-            <div class="left-artical">
-                <div class="text-left-artical">
-                    <div class="you-know"> Please Give </div>
-                    <div class="offer"> Your Success <span class="sevntyfive">100%</span> <br>
-                        To Students</div>
-                    <div class="offer"> # Educators</div>
-                </div>
-            </div>
-            <div class="right-artical-image"> <img src="images/tech.png" alt="" class="bggirl"></div>
-            <div class="login-form" id="login-form">
-                <h2 class="stud-login"> Admin Login </h2><br><br>
-                <form action="adminlogin.jsp" class="form">
-                    <input type="text" placeholder="Unique College I'D " required name="id"><br>
-                    <input type="text" placeholder="Password " required name="password"> <br>
-                    <br>
-                    <input type="submit" placeholder="Login" name="submit" class="submit" id="submit">
-                    <br>
-                </form>
-                <br>
-                <h3 class="forget-pass"><a href="forstuid.html"> Forget Your Password <br></a></h3>
-            </div>
-
+  <body onresize="checkScreenOrientation()" onscroll="Arrow()">
+    <main>
+      <header>
+        <div class="nav-logo">
+          <img
+            src="images/transparent-logo.png"
+            alt="main collage logo "
+            class="nav-image"
+          />
+          <h3 ><a href="index.html" class="web-link">Sudhir College Of Education</a></h3>
         </div>
-    </div>
-</body>
-
+        <div class="others-nav-elements">
+          <ul>
+            <li><a href="#our-courses">Courses</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+              <a href="studentlogin.html" target="_blank">Student Login</a>
+            </li>
+            <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-table-elements2">
+            <ul>
+              <li><a href="#our-courses">Courses</a></li>
+              <li><a href="#">Faculty</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li>
+                <a href="studentlogin.html" target="_blank">Student Login</a>
+              </li>
+              <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="apply-nav">
+          <button class="apply-button">Apply Now</button>
+        </div>
+      </header>
+      <div class="content">
+        <div class="left-artical">
+          <div class="text-left-artical">
+            <div class="you-know">Please Give</div>
+            <div class="offer">
+              Your Success <span class="sevntyfive">100%</span> <br />
+              To Students
+            </div>
+            <div class="offer"># Educators</div>
+          </div>
+        </div>
+        <div class="right-artical-image">
+          <img src="images/tech.png" alt="" class="bggirl" />
+        </div>
+        <div class="login-form" id="login-form">
+          <h2 class="stud-login">Admin Login</h2>
+          <br /><br />
+          <form action="adminlogin.jsp" class="form">
+            <input
+              type="text"
+              placeholder="Unique College I'D "
+              required
+              name="id"
+            /><br />
+            <input
+              type="text"
+              placeholder="Password "
+              required
+              name="password"
+            />
+            <br />
+            <br />
+            <input
+              type="submit"
+              placeholder="Login"
+              name="submit"
+              class="submit"
+              id="submit"
+            />
+            <br />
+          </form>
+          <br />
+          <h3 class="forget-pass">
+            <a href="forstuid.html"> Forget Your Password <br /></a>
+          </h3>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

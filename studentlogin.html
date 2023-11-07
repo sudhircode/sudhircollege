@@ -1,114 +1,166 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Student Login</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
-    <link rel="stylesheet" href="css/studentlogin.css">
-    <link rel="shortcut icon" href="images/black fevicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/mediaquery1.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="images/black fevicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/studentlogin.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/mediaquery1.css" />
+  </head>
 
-<body>
-    <div class="main">
-        <header>
-            <div class="nav-logo"><img src="images/transparent-logo.png" alt="main collage logo " class="nav-image">
-            </div>
-            <div class="nav-collage-name"><a href="home.jsp" class="web-link">Sudhir College Of Education</a></div>
-            <div class="menu">
-                <div class="menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="nav-table-elements2">
-                    <div class="shared-class"><a href="#">Courses </a></div>
-                    <div class="shared-class"><a href="#">Faculty </a></div>
-                    <div class="shared-class"><a href="#">Contact </a></div>
-                    <div class="shared-class"><a href="studentlogin.html" target="_blank"> Student Login </a></div>
-                    <div class="shared-class"><a href="adminlogin.html" target="_blank"> Admin Login </a></div>
-                </div>
-            </div>
-            <div class="others-nav-elements">
-                <table class="nav-table-elements">
-                    <tr>
-                        <td> <a href="#">Courses </a></td>
-                        <td> <a href="#">Faculty </a></td>
-                        <td> <a href="#">Contact </a></td>
-                        <td> <a href="studentlogin.html" target="_blank"> Student Login </a></td>
-                        <td> <a href="adminlogin.html" target="_blank"> Admin Login </a></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="apply-nav"><button class="apply-button">Apply Now</button></div>
-        </header>
-        <div class="content">
-            <div class="left-artical">
-                <div class="text-left-artical">
-                    <div class="you-know"> Did You Know ?</div>
-                    <div class="offer"> We Offer Upto <br><span class="sevntyfive">90 %</span> <br>
-                        Scholarship</div> <br>
-                    <div class="apply"> <button class="apply-now"> Apply Now </button></div>
-                </div>
-            </div>
-            <div class="right-login-rigister">
-                <div class="left" id="login-form">
-                    <form action=""> <br>
-                        <h2 class="std-logn">Student Login</h2>
-                        <input type="text" placeholder="Mobile No. / Email I'D ">
-                        <div><input type="password" placeholder="password "> <input type="checkbox" class="checkbox">
-                        </div>
-                        <button>Login   </button> <br>
-                        <div class="forget-your-pass-div">
-                            <a href="#">Forget Your Password Here !</a>
-                        </div><br>
-                        <h3 class="new-here"> Or You New Here </h3> <br>
-                    </form>
-                    <button class="submit-login" onclick="register()"> Register Here !</button> <br>
-                </div>
-                <div class="right" id="register-form"> <br>
-                    <h2 class="std-logn">Student Registeration</h2>
-                    <form action="" class="student-registratio">
-                        <table class="table-register">
-                            <tr>
-                                <td><input type="text" placeholder=" First Name "></td>
-                                <td><input type="text" placeholder=" Last Name "></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder=" Father's Name "></td>
-                                <td>
-                                    <div class="gender"> Gender:- <select name="" id="">
-                                            <option value=""> Male </option>
-                                            <option value="">female</option>
-                                        </select></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <input type="number" name="" id="" placeholder="Mobile Number"></td>
-                                <td> <input type="email" name="" id="" placeholder=" Email / Gmail "></td>
-                            </tr>
-                            <tr>
-                                <td> <input type="password" placeholder="Strong Password"></td>
-                                <td> <input type="password" placeholder="Same Password"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="submit-row"><button> Submit </button></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="alredy-re"> <br> Already Registered !</td>
-                            </tr>
-                        </table>
-                    </form><br>
-                    <button class="submit-login" onclick="login()"> Login Here ! </button> <br>
-                </div>
-            </div>
+  <body onresize="checkScreenOrientation()" onscroll="Arrow()">
+    <main>
+      <header>
+        <div class="nav-logo">
+          <img
+            src="images/transparent-logo.png"
+            alt="main collage logo "
+            class="nav-image"
+          />
+          <h3 ><a href="index.html" class="web-link">Sudhir College Of Education</a></h3>
         </div>
-    </div>
+        <div class="others-nav-elements">
+          <ul>
+            <li><a href="#our-courses">Courses</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+              <a href="studentlogin.html" target="_blank">Student Login</a>
+            </li>
+            <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-table-elements2">
+            <ul>
+              <li><a href="#our-courses">Courses</a></li>
+              <li><a href="#">Faculty</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li>
+                <a href="studentlogin.html" target="_blank">Student Login</a>
+              </li>
+              <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="apply-nav">
+          <button class="apply-button">Apply Now</button>
+        </div>
+      </header>
+      <div class="content">
+        <div class="left-artical">
+          <div class="text-left-artical">
+            <div class="you-know">Did You Know ?</div>
+            <div class="offer">
+              We Offer Upto <br /><span class="sevntyfive">90 %</span> <br />
+              Scholarship
+            </div>
+            <br />
+            <div class="apply">
+              <button class="apply-now">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-login-rigister">
+          <div class="left" id="login-form">
+            <form action="">
+              <br />
+              <h2 class="std-logn">Student Login</h2>
+              <input type="text" placeholder="Mobile No. / Email I'D " />
+              <div>
+                <input type="password" placeholder="password " />
+                <input type="checkbox" class="checkbox" />
+              </div>
+              <button>Login</button> <br />
+              <div class="forget-your-pass-div">
+                <a href="#">Forget Your Password Here !</a>
+              </div>
+              <br />
+              <h3 class="new-here">Or You New Here</h3>
+              <br />
+            </form>
+            <button class="submit-login" onclick="register()">
+              Register Here !
+            </button>
+            <br />
+          </div>
+          <div class="right" id="register-form">
+            <br />
+            <h2 class="std-logn">Student Registeration</h2>
+            <form action="" class="student-registratio">
+              <table class="table-register">
+                <tr>
+                  <td><input type="text" placeholder=" First Name " /></td>
+                  <td><input type="text" placeholder=" Last Name " /></td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder=" Father's Name " /></td>
+                  <td>
+                    <div class="gender">
+                      Gender:-
+                      <select name="" id="">
+                        <option value="">Male</option>
+                        <option value="">female</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      placeholder="Mobile Number"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder=" Email / Gmail "
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="password" placeholder="Strong Password" />
+                  </td>
+                  <td><input type="password" placeholder="Same Password" /></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="submit-row">
+                    <button>Submit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="alredy-re">
+                    <br />
+                    Already Registered !
+                  </td>
+                </tr>
+              </table>
+            </form>
+            <br />
+            <button class="submit-login" onclick="login()">Login Here !</button>
+            <br />
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="../javascript/studentlogin.js"></script>
-</body>
-
+  </body>
 </html>
