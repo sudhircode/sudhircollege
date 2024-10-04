@@ -325,13 +325,17 @@ header {
     margin-top: 25px;
     background-color: #d4eaf8;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     cursor: pointer;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
-
+.faculty h4{
+    margin-top: 20px;
+    text-align: center;
+}
 .faculty:hover {
     transition: .3s ease-in-out;
     transform: translateY(-10px);

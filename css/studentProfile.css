@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #81bcea;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}
+
+.section div {
+    padding: 10px;
+}
+
+#alertBox {
+    position: fixed;
+    top: 65px;
+    right: 100px;
+    z-index: 3;
+    max-width: 60%;
+    background-color: rgb(245, 230, 210);
+    border-radius: 3px;
+    border: 1px solid red;
+    padding: 7px;
+
+}
+
+.img {
+    /* background-color: violet; */
+    width: clamp(100px, 40%, 45%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img img {
+    margin-top: 10px;
+    width: clamp(180px, 17vw, 25vw);
+    height: clamp(180px, 17vw, 25vw);
+    object-fit: cover;
+    box-shadow: 0 4px 8px #2b3b48;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.Details {
+    width: 60%;
+    padding: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.apply-now {
+    width: 140px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #0e3a5b;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.apply-now:hover {
+    scale: 1.2;
+    border: 1px solid #0e3a5b;
+    transform-origin: right;
+    transition: .3s ease-in-out;
+    background-color: #81bcea;
+}
+.update {
+    display: none;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #81bcea;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.update table span{
+    color: red;
+}
+.update table label{
+    position: absolute;
+    margin-left: 10px;
+    background-color: #81bcea;
+    scale: .85;
+}
+
+#exit {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 23px;
+    height: 24px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+#exit:hover {
+    background-color: red;
+}
+
+.update td,
+tr,
+table {
+    border: none;
+}
+
+.update table {
+    overflow-x: auto;
+}
+.update table button{
+   margin-left: 35%;
+}
+.update img{
+    cursor: pointer;
+}
+.update input {
+    padding: 2px;
+    font-size: 1.05em;
+    font-weight: bold;
+    height: 30px;
+    outline: 1px solid black;
+}
+.btn:hover{
+    border: 1px solid teal;
+}
+.radio input{
+    height: auto;
+    outline: none;
+    margin-top: 10px;
+}

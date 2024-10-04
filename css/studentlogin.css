@@ -2,68 +2,52 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
 
 .content {
     background-color: #93caf4;
-    width: 95%;
+    width: 95vw;
     margin: auto;
     margin-bottom: 3%;
-    margin-top: 18vh;
+    margin-top: 90px;
     height: auto;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    overflow: hidden;
 }
 
 .left-artical {
-    width: 50vw;
-    margin: auto;
+    width: 45vw;
+    min-width: 200px;
     display: flex;
-    margin-left: 2%;
-}
-.text-left-artical{
-    margin: auto;
-    width: 95%;
-}
-.you-know {
-    width: 100%;
-    margin: auto;
-    font-size: 3em;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #0e3a5b;
-    padding-top: 18px;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    place-content: center;
 }
 
+.you-know,
 .offer {
-    width: 100%;
-    margin: auto;
     font-size: 3em;
-    font-family: sans-serif;
     font-weight: bold;
     color: #0e3a5b;
-    padding-top: 8px;
-
 }
 
 .sevntyfive {
+    display: block;
     font-size: 2.7em;
-    font-family: sans-serif;
     font-weight: bold;
     color: rgb(116, 33, 33);
 }
 
-.apply{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 1%;
-}
-.apply-now,.left button,.right button {
-    margin: auto;
-    width: 120px;
+.apply-now {
+    width: 150px;
     height: 45px;
-    font-family: sans-serif;
     font-size: 1em;
     font-weight: bold;
     color: white;
@@ -71,119 +55,203 @@
     border-radius: 10px;
     border: 0px;
     cursor: pointer;
+    margin-top: 20px;
+    transition: .3s ease-in-out;
 }
 
 .apply-now:hover {
+    width: 200px;
+    transition: .3s ease-in-out;
     background-color: #81bcea;
 }
+
 .left button:hover {
     background-color: #81bcea;
 }
+
 .right button:hover {
     background-color: #81bcea;
 }
-.right-login-rigister{
-    width: 44%;
-    min-width: 350px;
-    margin: auto;
-    margin-bottom: 2%;
-}
-.left {
-    width: 35%;
-    height: auto;
-    min-width: 350px;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    padding-bottom: 2%;
-    /* display: block; */
-    display: none;
-}
 
-.left h2,.std-logn {
-    font-size: 1.9em;
-    font-family: sans-serif;
-}
-
-.new-here {
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.left input {
-    margin: auto;
-    width: 60%;
-    border: none;
-    border: 0px solid white;
-    background: transparent;
-    border-bottom: 1px solid #000000;
-    text-align: center;
-    outline: none;
-    font-size: 1em;
-    color: black;
-    margin-top: 4%;
-}
-
-.checkbox {
-    position: relative;
-    bottom: 35px;
-    left: 90px;
-}
-
-.left a,.alredy-re,.gender {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.left button,
-.right button {
-    width: 60%;
-    margin: auto;
-    height: 6.5vh;
-    font-size: 1.4em;
-    font-family: sans-serif;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-}
+/* --------------------all-form------------------- */
 .right {
-    width: 35%;
-    height: auto;
-    min-width: 400px;
-    background-color: white;
-    border-radius: 10px;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 5%;
-    /* display: none; */
+    width: 45vw;
+    min-width: 350px;
+    height: 450px;
+    align-self: center;
+    display: flex;
+    place-content: center;
+
+
 }
 
-.right input {
-    margin: auto;
-    width: 80%;
-    border: none;
-    border: 0px solid white;
-    background: transparent;
-    border-bottom: 1px solid #000000;
-    text-align: center;
-    outline: none;
-    font-size: 1em;
-    color: black;
-    margin-top: 8%;
-}
-.submit-row{
-    padding-top: 3%;
-}
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.program22{
+
+/* ------------registeration-from-------------------- */
+.register-form,
+.login-form {
+    overflow: hidden;
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+
+.student-registratio {
+    width: 100%;
+    display: flex;
+}
+
+.student-registratio div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.student-registratio input {
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 1.5px solid black;
+    border-radius: none;
+    outline: 0px;
+    opacity: 70%;
+}
+
+.student-registratio input:focus {
+    border-bottom: 2px solid #81bcea;
+}
+
+.student-registratio div span {
+    font-size: clamp(.8em, .1em + 1vw, 3em);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 40%;
+    margin-bottom: -20px;
+}
+
+.student-registratio div span input {
+    width: 13px;
+}
+
+.student-registratio button,
+.submit-login,
+.login {
+    width: 130px;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #0e3a5b;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.student-registratio button:hover,
+.submit-login:hover,
+.login:hover {
+    scale: 1.1;
+    transition: .3s ease-in-out;
+}
+
+/* ---------------login-form------------------------ */
+.login-form {
     display: none;
 }
-.program11{
-display: block;
+
+.student-login {
+    width: 100%;
+}
+
+.student-login div {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mobile,
+.std-pass {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 1.5px solid black;
+    border-radius: none;
+    outline: 0px;
+    opacity: 70%;
+}
+
+.login {
+    margin-top: 25px;
+}
+
+.std-pass {
+    width: 100%;
+}
+
+.check-box {
+    margin-top: 25px;
+    width: 5%;
+    border: none;
+}
+
+input:focus:invalid {
+    border-color: red;
+}
+input:valid {
+    border-color: green;
+}
+
+/* -------------------other-classs--------------- */
+.program22 {
+    display: none;
+}
+
+.translate {
+    transform: translateX(0px);
+    transition: .2s ease-out;
+
+}
+
+.program11 {
+    display: block;
+    display: flex;
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+    .right {
+        width: 90vw;
+        padding-bottom: 20px;
+    }
+
+    .left-artical {
+        width: 95vw;
+    }
+
+    .you-know,
+    .offer {
+        font-size: 2.8em;
+    }
 }

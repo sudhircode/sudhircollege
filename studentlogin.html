@@ -1,166 +1,218 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Student Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="images/black fevicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/studentlogin.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/mediaquery1.css" />
-  </head>
 
-  <body onresize="checkScreenOrientation()" onscroll="Arrow()">
-    <main>
-      <header>
-        <div class="nav-logo">
-          <img
-            src="images/transparent-logo.png"
-            alt="main collage logo "
-            class="nav-image"
-          />
-          <h3 ><a href="index.html" class="web-link">Sudhir College Of Education</a></h3>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Student Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="images/black fevicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/studentlogin.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/mediaquery1.css" />
+  <script type="text/javascript">
+    function redirectToLogin() {
+    window.open("studentlogin.html", "_blank");
+  }
+    document.addEventListener('DOMContentLoaded', function () {
+      var alertBox = document.getElementById('alertBox');
+      alertBox.style.display = 'flex';
+      setTimeout(function () {
+        alertBox.style.display = 'none';
+      }, 2000);
+    });
+    function change() {
+      const checkbox = document.getElementById('check');
+      const pass = document.getElementById('pass');
+      if (checkbox.checked) {
+        pass.type = " text";
+      } else {
+        pass.type = " password";
+      }
+    }
+
+    function register() {
+      document.querySelector('#register-form').classList.remove('program22');
+      document.querySelector('#login-form').classList.add('program22');
+      document.querySelector('#login-form').classList.remove('program11');
+      document.querySelector('#register-form').classList.add('program11');
+    }
+
+    function login() {
+      document.querySelector('#register-form').classList.add('program22');
+      document.querySelector('#login-form').classList.remove('program22');
+      document.querySelector('#login-form').classList.add('program11');
+      document.querySelector('#register-form').classList.remove('program11');
+    }
+    document.getElementById('toggle-button').addEventListener("click", function () {
+      let a = document.getElementById('toggle-button').innerText;
+      document.getElementById('hide-text').classList.toggle('show');
+      if (a == "See More . . .") {
+        document.getElementById('toggle-button').innerText = "Show Less . . .";
+      }
+      else {
+
+        document.getElementById('toggle-button').innerText = "See More . . .";
+      }
+    })
+    document.getElementById('toggle-button1').addEventListener("click", function () {
+      let a = document.getElementById('toggle-button1').innerText;
+      document.getElementById('hide-text1').classList.toggle('show');
+      if (a == "See More . . .") {
+        document.getElementById('toggle-button1').innerText = "Show Less . . .";
+      }
+      else {
+
+        document.getElementById('toggle-button1').innerText = "See More . . .";
+      }
+    })
+
+    function checkScreenOrientation() {
+      if (window.matchMedia("(orientation: portrait)").matches) {
+        document.querySelector('.web-link').innerHTML = " Sudhir College "
+      } else if (window.matchMedia("(orientation: landscape)").matches) {
+        document.querySelector('.web-link').innerHTML = "Sudhir College Of Education "
+      }
+    }
+    function Arrow() {
+      if (window.scrollY >= 200) {
+        document.getElementById('arrow').style.display = "block";
+      }
+      else {
+        document.getElementById('arrow').style.display = "none";
+      }
+    }
+    document.getElementById('arrow').addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    })
+  </script>
+</head>
+
+<body onresize="checkScreenOrientation()" onscroll="Arrow()">
+  <main>
+    <header>
+      <div class="nav-logo">
+        <img src="images/transparent-logo.png" alt="main collage logo " class="nav-image" />
+        <h3><a href="index.html" class="web-link">Sudhir College Of Education</a></h3>
+      </div>
+      <div class="others-nav-elements">
+        <ul>
+          <li><a href="index.html#our-courses">Courses</a></li>
+          <li><a href="index.html#faculty">Faculty</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+          <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+          <li><a href="about.html" target="_blank">About Us</a></li>
+          
+        </ul>
+      </div>
+      <div class="menu">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="others-nav-elements">
+        <div class="nav-table-elements2">
           <ul>
-            <li><a href="#our-courses">Courses</a></li>
-            <li><a href="#">Faculty</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li>
-              <a href="studentlogin.html" target="_blank">Student Login</a>
-            </li>
+            <li><a href="index.html#our-courses">Courses</a></li>
+            <li><a href="index.html#faculty">Faculty</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
             <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+            <li> <a href="about.html" target="_blank">About Us</a></li>           
           </ul>
         </div>
-        <div class="menu">
-          <div class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="nav-table-elements2">
-            <ul>
-              <li><a href="#our-courses">Courses</a></li>
-              <li><a href="#">Faculty</a></li>
-              <li><a href="#Contact">Contact</a></li>
-              <li>
-                <a href="studentlogin.html" target="_blank">Student Login</a>
-              </li>
-              <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="apply-nav">
+        <button class="apply-button" onclick="redirectToLogin()">Apply Now</button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="left-artical">
+        <div class="you-know">Did You Know ?</div>
+        <div class="offer">
+          We Offer Upto <span class="sevntyfive">90 %</span>
+          Scholarship🔥
         </div>
-        <div class="apply-nav">
-          <button class="apply-button">Apply Now</button>
-        </div>
-      </header>
-      <div class="content">
-        <div class="left-artical">
-          <div class="text-left-artical">
-            <div class="you-know">Did You Know ?</div>
-            <div class="offer">
-              We Offer Upto <br /><span class="sevntyfive">90 %</span> <br />
-              Scholarship
-            </div>
-            <br />
-            <div class="apply">
-              <button class="apply-now">Apply Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="right-login-rigister">
-          <div class="left" id="login-form">
-            <form action="">
-              <br />
-              <h2 class="std-logn">Student Login</h2>
-              <input type="text" placeholder="Mobile No. / Email I'D " />
-              <div>
-                <input type="password" placeholder="password " />
-                <input type="checkbox" class="checkbox" />
-              </div>
-              <button>Login</button> <br />
-              <div class="forget-your-pass-div">
-                <a href="#">Forget Your Password Here !</a>
-              </div>
-              <br />
-              <h3 class="new-here">Or You New Here</h3>
-              <br />
-            </form>
-            <button class="submit-login" onclick="register()">
-              Register Here !
-            </button>
-            <br />
-          </div>
-          <div class="right" id="register-form">
-            <br />
-            <h2 class="std-logn">Student Registeration</h2>
-            <form action="" class="student-registratio">
-              <table class="table-register">
-                <tr>
-                  <td><input type="text" placeholder=" First Name " /></td>
-                  <td><input type="text" placeholder=" Last Name " /></td>
-                </tr>
-                <tr>
-                  <td><input type="text" placeholder=" Father's Name " /></td>
-                  <td>
-                    <div class="gender">
-                      Gender:-
-                      <select name="" id="">
-                        <option value="">Male</option>
-                        <option value="">female</option>
-                      </select>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input
-                      type="number"
-                      name=""
-                      id=""
-                      placeholder="Mobile Number"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="email"
-                      name=""
-                      id=""
-                      placeholder=" Email / Gmail "
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="password" placeholder="Strong Password" />
-                  </td>
-                  <td><input type="password" placeholder="Same Password" /></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="submit-row">
-                    <button>Submit</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="alredy-re">
-                    <br />
-                    Already Registered !
-                  </td>
-                </tr>
-              </table>
-            </form>
-            <br />
-            <button class="submit-login" onclick="login()">Login Here !</button>
-            <br />
-          </div>
+        <div class="apply">
+          <button class="apply-now">Apply Now</button>
         </div>
       </div>
-    </main>
-    <script src="../javascript/studentlogin.js"></script>
-  </body>
+      <div class="right">
+        <div class="login-form" id="login-form">
+          <h2 style="margin-top: 25px;">Student Login</h2>
+          <!--   <form action="login" method="post" class="student-login">
+         use upeer for servlet and down for jsp-->
+          <form action="StudentProfile.jsp" method="post" class="student-login">
+            <input type="text" name="id" placeholder="Mobile No. / Email I'D " class="mobile" required />
+            <div>
+              <input type="password" name="pass" id="pass" placeholder="password " class="std-pass" required />
+              <input type="checkbox" onclick="change()" class="check-box" id="check" />
+            </div>
+            <div style="margin-top: 25px;">
+              <button input type="reset" name="reset" value="reset" class="submit-login">Reset</button>
+              <button type="submit" value="login" name="submit" placeholder="Login" class="submit-login">Login</button>
+            </div>
+          </form>
+          <a href="#">Forget Your Password Here !</a>
+          <h3 class="new-here">Or You New Here</h3>
+          <button class="submit-login" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="register-form" id="register-form">
+          <h2>Student Registeration</h2>
+          <form action="newStudent" method="post" class="student-registratio">
+            <div style="margin-top: 0px;">
+              <input type="text" name="fname" placeholder=" First Name " required pattern="^[a-zA-Z0-9]{3,20}$"
+                title="First Name must be alphanumeric and between 3 and 20 characters" />
+              <input type="text" name="sname" placeholder=" Last Name " pattern="^[a-zA-Z0-9]{4,12}$"
+                title="Last Name must be alphanumeric and between 4 and 12 characters" />
+            </div>
+            <div>
+              <input type="text" name="fathername" required placeholder=" Father's Name " pattern="^[a-zA-Z0-9]{3,12}$"
+                title="Father Name must be alphanumeric and between 3 and 12 characters" />
+              <span>
+                Gender <input type="radio" name="gender" value="Male" class="Gender" checked> Male
+                <input type="radio" name="gender" value="Female" class="Gender"> Female
+              </span>
+            </div>
+            <div>
+              <input type="number" required name="adhar" id="" placeholder="AdharCard Number" pattern="\d{12}"
+                title="Please enter a valid 12-digit Adhar number">
+              <span>
+                Class&nbsp;&nbsp;&nbsp; <input type="radio" value="Regular" name="class" class="Class" checked> Regular
+                <input type="radio" name="class" value="Distance" class="Class"> Dis.
+              </span>
+            </div>
+            <div>
+              <input type="number" required name="monum" id="" placeholder="Mobile Number" pattern="\d{10}"
+                title="Please enter a valid 10-digit mobile number" />
+              <input type="email" required name="email" id="" placeholder=" Email / Gmail "
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" />
+            </div>
+            <div>
+              <input type="password" name="pass" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,20}$"
+                title="Password must be between 8 and 20 characters and include at least one uppercase letter, one lowercase letter, and one number"
+                placeholder="Enter Password" />
+              <input type="password" name="pass1" required placeholder="Same Password" />
+            </div>
+            <div>
+              <button type="reset" name="reset" value="reset" class="submit-login"> Reset </button>
+              <button type="submit" value=register name="submit" placeholder="Register" class="submit-login"> Submit
+              </button>
+            </div>
+          </form>
+          <label for="already"> Already Registered !</label>
+          <button class="submit-login" type="submit" value="register" name="submit" onclick="login()"
+            id="already">Login</button>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../javascript/studentlogin.js"></script>
+</body>
+
 </html>

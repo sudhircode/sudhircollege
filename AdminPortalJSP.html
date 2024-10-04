@@ -1,0 +1,219 @@
+<%@page import="java.util.List" %>
+    <%@page import="com.files.entities.StudentDao" %>
+        <%@page import="java.util.ArrayList" %>
+            <%@page import="com.files.entities.Student" %>
+                <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+                    <!DOCTYPE html>
+                    <html>
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Admin Profile</title>
+                        <link rel="stylesheet" href="css/studentProfile.css">
+                        <link rel="stylesheet" href="css/home.css">
+                        <link rel="stylesheet" href="css/mediaquery1.css">
+                        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+                        <style>
+                            table,
+                            th,
+                            tr,
+                            td {
+                                padding: 2px;
+                                border: 1px solid black;
+                                border-collapse: collapse;
+                            }
+                           
+                        </style>
+                        <script>
+                            function redirectToLogin() {
+                                window.open("studentlogin.html", "_blank");
+                            }
+                            function update() {
+                                document.getElementById('update').style.display = "block";
+                            }
+                            function none() {
+                                document.getElementById('update').style.display = "none";
+                            }
+                        </script>
+                    </head>
+
+                    <body>
+                        <header>
+                            <div class="nav-logo">
+                                <img src="images/transparent-logo.png" alt="main collage logo " class="nav-image" />
+                                <h3><a href="index.html" class="web-link">Sudhir College Of Education</a></h3>
+                            </div>
+                            <div class="others-nav-elements">
+                                <ul>
+                                    <li><a href="#our-courses">Courses</a></li>
+                                    <li><a href="#Contact">Contact</a></li>
+                                    <li><a href="studentlogin.html" target="_blank">Student Portal</a></li>
+                                    <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+                                    <li><a href="about.html" target="_blank">About Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <div class="menu-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="nav-table-elements2">
+                                    <ul>
+                                        <li><a href="#our-courses">Courses</a></li>
+                                        <li><a href="#Contact">Contact</a></li>
+                                        <li><a href="studentlogin.html" target="_blank">Student Portal</a></li>
+                                        <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+                                        <li><a href="about.html" target="_blank">About Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="apply-nav">
+                                <button class="apply-button" onclick="redirectToLogin()">Apply Now</button>
+                            </div>
+                        </header>
+                        <div class="section">
+                            <div style="overflow-x: scroll;padding: 10px;">
+                                <h1>Admin Profile Name: </h1>
+                                <%Student s=(Student)session.getAttribute("std");%>
+                                    <% String id=request.getParameter("id"); String
+                                        pass=request.getParameter("password"); boolean
+                                        status=StudentDao.CheckAdminLogin(id, pass); if (status) { List<Student> slist =
+                                        StudentDao.getStudentDetils();
+                                        %>
+                                        <table style="overflow: scroll; margin: auto">
+                                            <thead>
+                                                <tr>
+                                                    <th>Serial Number </th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Father Name</th>
+                                                    <th>Gender</th>
+                                                    <th>Mobile Number</th>
+                                                    <th>Gmail</th>
+                                                    <th>Password</th>
+                                                    <th>Adhar Card's Number</th>
+                                                    <th>Class Type</th>
+                                                    <th>Update</th>
+                                                    <th>Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <% for (Student e : slist) { %>
+                                                    <tr>
+                                                        <td>
+                                                            <%=e.getSerial_number()%>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getFname() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getLanme() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getFathername() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getGender() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getMobilenumb() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getGmail() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getPass() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getAdharnum() %>
+                                                        </td>
+                                                        <td>
+                                                            <%= e.getClasstype() %>
+                                                        </td>
+                                                        <td><button
+                                                                style="width: 100px; height: 32px; border: 1px solid  rgb(44, 10, 77); font-size: 1.05em; font-weight: bold; color: white; background-color: rgb(44, 10, 77); cursor: pointer; border-radius:5px; transition: .3s ease-in-out;"
+                                                                onclick="update()">
+                                                                Update</button></td>
+                                                        <td><a href="DeleteDetails.jsp?id=<%=e.getSerial_number()%>"><button
+                                                                    class="apply-button1"
+                                                                    style="width: 100px; height: 32px; border: 1px solid  rgb(44, 10, 77); font-size: 1.05em; font-weight: bold; color: white; background-color: rgb(44, 10, 77); cursor: pointer; border-radius:5px; transition: .3s ease-in-out;">
+                                                                    Delete</button></a></td>
+                                                    </tr>
+                                                    <% } %>
+                                            </tbody>
+                                        </table>
+                                        <div class="update" id="update">
+                                            <span onclick="none()" id="exit">X</span>
+                                            <table>
+                                                <tr>
+                                                    <td><label for="name">Serial Number : </label></td>
+                                                    <td>
+                                                        <div style="display: flex;justify-content: center;"><img src=""
+                                                                alt="Student Profile Image" width="100px"
+                                                                style="border-radius: 50%;border: 1px solid red;" title="Click To update Image"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="name"> <span>*</span>First Name </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                    <td> <label for="name">Last Name </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="name"> <span>*</span>Father's Name </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                    <td> <label for="name"><span>*</span>Mobile Number </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="name"><span>*</span>Gmail/Email </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                    <td> <label for="name"><span>*</span>Password : </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="radio">
+                                                    <td>  <label for="name"><span>*</span>class Type </label>
+                                                        <div>
+                                                            <input type="radio" name="classt" id="" > Distance
+                                                            <input type="radio" name="classt" id=""> Regular
+                                                        </div>
+                                                    </td>
+                                                    <td> <label for="name"><span>*</span>Gender </label>
+                                                        <div>
+                                                            <input type="radio" name="gender" id=""> Male <input
+                                                                type="radio" name="gender"> Female
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> <label for="name"><span>*</span>Adhar Card's Number </label>
+                                                        <div><input type="text" name="name" id=""></div>
+                                                    </td>
+                                                    <td><button class="apply-button btn">Update</button></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                            </div>
+                            <% } else { %>
+                                <% request.getRequestDispatcher("adminlogin.html").include(request, response); %>
+                                    <div id="alertBox">⚠️ Either ID or Password is Wrong. Please Enter Right Credential
+                                        ⚠️ </div>
+                                    <%} %>
+                                        <script>
+                                            setTimeout(function () {
+                                                document.getElementById('alertBox').style.display = 'none';
+                                            }, 2000);
+                                        </script>
+                                        <% } %>
+                        </div>
+                    </body>
+
+                    </html>

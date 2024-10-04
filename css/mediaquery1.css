@@ -55,7 +55,7 @@
     }
 }
 
-@media (min-width: 100px) and (max-width: 700px) {
+@media (min-width: 10px) and (max-width: 700px) {
 
     .menu-icon span {
         display: block;
@@ -200,4 +200,12 @@
         justify-content: space-evenly;
     }
 
+    /* --------------Student profile.jsp------------- */
+    section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .img,.Details{
+        width: 100%;
+    }
 }

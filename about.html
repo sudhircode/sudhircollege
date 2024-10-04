@@ -6,19 +6,34 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sudhir Group Of College & institute</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/mediaquery1.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
+<script>
+    function redirectToLogin() {
+        window.open("studentlogin.html", "_blank");
+    }
+</script>
 
 <body>
     <div class="main">
         <header>
-            <div class="nav-logo"><img src="images/transparent-logo.png" alt="main collage logo " class="nav-image">
+            <div class="nav-logo">
+                <img src="images/transparent-logo.png" alt="main collage logo " class="nav-image" />
+                <h3><a href="index.html" class="web-link">Sudhir College Of Education</a></h3>
             </div>
-            <div class="nav-collage-name"><a href="home.jsp" class="web-link">Sudhir College Of Education</a>
+            <div class="others-nav-elements">
+                <ul>
+                    <li><a href="index.html#our-courses">Courses</a></li>
+                    <li><a href="index.html#Faculty">Faculty</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                    <li>
+                        <a href="studentlogin.html" target="_blank">Student Login</a>
+                    </li>
+                    <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+                </ul>
             </div>
             <div class="menu">
                 <div class="menu-icon">
@@ -27,25 +42,20 @@
                     <span></span>
                 </div>
                 <div class="nav-table-elements2">
-                    <div class="shared-class"><a href="#">Courses </a></div>
-                    <div class="shared-class"><a href="#">Faculty </a></div>
-                    <div class="shared-class"><a href="#">Contact </a></div>
-                    <div class="shared-class"><a href="studentlogin.html" target="_blank"> Student Login </a></div>
-                    <div class="shared-class"><a href="adminlogin.html" target="_blank"> Admin Login </a></div>
+                    <ul>
+                        <li><a href="index.html#our-courses">Courses</a></li>
+                        <li><a href="index.html#Faculty">Faculty</a></li>
+                        <li><a href="index.html#Contact">Contact</a></li>
+                        <li>
+                            <a href="studentlogin.html" target="_blank">Student Login</a>
+                        </li>
+                        <li><a href="adminlogin.html" target="_blank">Admin Login</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="others-nav-elements">
-                <table class="nav-table-elements">
-                    <tr>
-                        <td> <a href="#">Courses </a></td>
-                        <td> <a href="#">Faculty </a></td>
-                        <td> <a href="#">Contact </a></td>
-                        <td> <a href="studentlogin.html" target="_blank"> Student Login </a></td>
-                        <td> <a href="adminlogin.html" target="_blank"> Admin Login </a></td>
-                    </tr>
-                </table>
+            <div class="apply-nav">
+                <button class="apply-button" onclick="redirectToLogin()">Apply Now</button>
             </div>
-            <div class="apply-nav"><button class="apply-button">Apply Now</button></div>
         </header>
         <div class="main-college-img-div">
             <div class="about-main-college-img">
